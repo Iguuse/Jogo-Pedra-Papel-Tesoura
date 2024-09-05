@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel Tesoura</title>
+</head>
+<link href="img/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="styles.css">
+
+
+
+<body>
+
+    <section id="logo">
+        <img src="img/Logo.png">
+    </section>
+
+    <section id="game">
+        <div class='gameBtn' id="pedra" data-value="pedra"><img src="img/stone-removebg-preview.png"> </div>
+        <div class='gameBtn' id="papel" data-value="papel"><img src="img/paper-removebg-preview.png"></div>
+        <div class='gameBtn' id="tesoura" data-value="tesoura"><img src="img/scissor-removebg-preview.png"></div>
+    </section>
+
+    <section id="difficulty">
+        <div class="difficulty-container">
+            <div class="texto">Possibilidade de Vitória</div>
+            <div class='texto'><input type="range" id="prob" value='50' min="0" max="100"><span id="valor">50</span> %
+            </div>
+    </section>
+
+
+
+    <section id="counter">
+        <div class="counter-title">Resultados</div>
+
+        <div class="couter-container">Vitória: <span class="score" id="wins"></span></div>
+
+        <div class="couter-container">Empate: <span class="score" id="ties"></span></div>
+
+        <div class="couter-container">Derrota: <span class="score" id="losses"></span></div>
+
+        <div class="couter-container"><button id="reset">Reiniciar</button></div>
+    </section>
+
+    <section id="wc">
+        <div class="wc-container">
+            Bem Vindo!
+            <div class="wc-container2"></div>
+        </div>
+    </section>
+
+    <section id="result">
+ 
+        <div class="result-container"></div>
+  
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>
